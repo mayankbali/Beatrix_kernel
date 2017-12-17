@@ -109,6 +109,9 @@ struct attribute_group {
 #define __ATTR_IGNORE_LOCKDEP	__ATTR
 #endif
 
+#define attr_name(_attr) (_attr).attr.name
+#endif
+
 #define __ATTRIBUTE_GROUPS(_name)				\
 static const struct attribute_group *_name##_groups[] = {	\
 	&_name##_group,						\
