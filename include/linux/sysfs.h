@@ -110,7 +110,6 @@ struct attribute_group {
 #endif
 
 #define attr_name(_attr) (_attr).attr.name
-#endif
 
 #define __ATTRIBUTE_GROUPS(_name)				\
 static const struct attribute_group *_name##_groups[] = {	\
